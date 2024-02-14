@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      background-color: cornsilk;
+    }
+
+    h1 {
+      text-align: center;
+      /* margin-bottom: 0; */
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      /* font-family: ubuntu; */
+      font-family: sans-serif;
+      font-size: 70px;
+      text-shadow: 2px 2px 5px;
+      /* letter-spacing: 2px; */
+    }
+
+    .grid-container {
+      display: grid;
+      /* grid-template-columns: 320px 428px 320px 351px;
+      grid-template-rows: 414px 285px; */
+      grid-template-columns: auto 2.5fr;
+      grid-template-rows: 1fr 1.5fr;
+      gap: 10px;
+      /* position: relative; */
+      margin: 100px 220px;
+      margin-top: 0;
+    }
+
+    .first {
+      /* width: 320px; */
+      height: 414px;
+      /* background-color:darkslategrey; */
+    }
+
+    .second {
+      width: 428px;
+      height: 414px;
+      background-color: #004592;
+    }
+
+    .third {
+      height: 334px;
+      width: 428px;
+      background-color: darkred;
+    }
+
+    .fourth {
+      height: 334px;
+      width: 378px;
+      background-color: #232629;
+      /* position: relative; */
+
+    }
+
+    .fifth {
+      height: 130px;
+      width: 50px;
+      background-color: #64604d;
+      /* position: relative; */
+      /* bottom: 80px;
+      right: 470px; */
+
+
+    }
+
+    .sixth {
+      width: 198px;
+      height: 20px;
+      background-color: rgb(157, 173, 157);
+      /* position: absolute; */
+      /* align-self: center; */
+      margin-top: 5px;
+
+
+    }
+
+    .seventh {
+      width: 153px;
+      height: 20px;
+      background-color: rgb(39, 12, 18);
+      /* position: absolute; */
+      align-self: center;
+      margin-top: 5px;
+    }
+
+    .two-box {
+      display: flex;
+      gap: 5px;
+    }
+
+    .aj-styles {
+      width: 430px;
+      height: 414px;
+    }
+
+    .roman-reigns {
+      width: 428px;
+      height: 414px;
+    }
+
+    .kenny-omega {
+      height: 334px;
+      width: 428px;
+    }
+
+    .sting {
+      height: 334px;
+      width: 378px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <h1>My Favorite Wrestlers</h1>
+  <div class="grid-container">
+    <div class="first">
+      <img class="aj-styles" src="https://i.pinimg.com/originals/77/3d/f5/773df5a426a34d0aad6b351befc29b37.jpg"
+        alt="aj-styles">
+    </div>
+    <div class="second">
+      <img
+        src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2023_05/story_38519/assets/2.jpeg?time=1685025870&size=*:900"
+        alt="roman-reigns" class="roman-reigns">
+    </div>
+    <div class="three-box">
+      <div class="third">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/k1MYgUUa8hdraqd10SeffdXjh9k=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24330450/kenny_omega_aew_1_650x365.jpg"
+          alt="" class="kenny-omega">
+      </div>
+      <div class="sixth"></div>
+      <div class="seventh"></div>
+    </div>
+    <div class="two-box">
+      <div class="fourth">
+        <img
+          src="https://img.bleacherreport.net/img/images/photos/003/340/512/hi-res-95277b6850e8fd9cf4f8812b22be0c1c_crop_exact.jpg?w=900&h=600&q=75"
+          alt="sting" class="sting">
+      </div>
+      <div class="fifth"></div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
